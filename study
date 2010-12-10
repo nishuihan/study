@@ -1,0 +1,194 @@
+# vim
+## my vim slides
+
+<http://vim-showoff-peter.heroku.com/>
+
+## get my vim plugins
+
+    git clone git://github.com/happypeter/peter-vim.git
+
+then follow this:
+<http://happypeter.github.com/GitBeijing/vim-conf-share.html>
+
+## insert mode shortcut
+__Ctrl-x-l__
+__Ctrl-n__
+__Ctrl-x-k__
+
+## help
+
+	:h
+	:h bd
+	:h tutor
+
+## move
+
+`gg` to the top of the file
+
+`G` to the end of the file
+
+`w` to next word
+
+`2w` to next next word
+
+## copy and paste
+
+__SHIFT_V__ then use `j` or `k` to move the cursor
+
+use `y` to copy
+
+and `d` to cut
+
+then move to another place then `p` (paste)
+
+# git
+
+	git clone git://....
+
+now how to get the new changes
+
+	cd job-akae.wiki
+	git pull	
+
+## git config
+
+this is my `~/.gitconfig`
+
+
+    [user]
+            name = peter    
+            email = username@mydomain.com
+
+    [color]
+            diff = auto
+            status = auto
+            branch = auto
+            interactive = auto
+            ui = true
+            pager = true
+
+    [color "branch"]
+            current = yellow reverse
+            local = yellow
+            remote = green
+
+    [color "diff"]
+            meta = yellow bold
+            frag = magenta bold
+            old = red bold
+            new = green bold
+
+    [color "status"]
+            added = yellow
+            changed = green
+            untracked = cyan
+
+    [core]
+            pager = less -FRSX
+            whitespace=fix,-indent-with-non-tab,trailing-space,cr-at-eol
+            editor = vim
+                
+
+    [alias]
+            co = checkout
+            ci = commit -a  
+            st = status
+            br = branch 
+
+## git create repo
+
+     mkdir gitrepo
+     cd gitrepo/
+     git init
+     vim file.txt
+     git add file.txt
+     git commit -a -m "first"
+     tig
+     vim file.txt 
+     git commit -a -m "second time"
+     tig
+     history >git.txt
+
+## github
+
+    rm -rf .ssh/
+    ssh-keygen -t dsa
+    sudo apt-get install xclip
+    cat /home/jiesse/.ssh/id_dsa.pub| xclip -sel clip
+    ssh git@github.com
+    ssh -v git@github.com
+
+
+## tig
+
+	apt-get install tig
+	man tig
+	cd dirname
+	tig
+
+## dir
+
+this is my code:
+
+        cd dirname
+
+# How to use markdown
+
+        vim myfile.md
+        markdown mymfile.md > myfile.html
+        firefox myfile.html&
+
+website: <http://daringfireball.net/projects/markdown/>
+
+# Basics
+
+## user and grp
+
+	chmod +x filename 
+	chmod -x filename
+	chmod 755 filename
+	adduser xxx
+	su xxx
+	ls -l filename
+
+diff and patch
+	
+	diff -u a b>ab.diff
+	rm b
+	patch < ab.diff 
+
+check owner of a file
+
+	ls -l filename
+
+delete anything: 
+
+	rm -rf filename
+
+Clear your shell: __Ctrl-l__
+
+show your Desktop: __Alt-Ctrl-d__
+
+Check if the thing is a file or dir
+
+        file dirname
+        file filename
+
+create a dir:
+
+        mkdir dirname
+
+# Home Work
+
+## reading
+
+_How to Become a Hacker_ (By Eric S.R)
+
+http://www.beijinglug.org
+
+http://linuxcommand.org/tlcl.php
+
+## listening
+
+Steve Jobs speech at Standford University (you can find it on <www.youku.com>)
+
